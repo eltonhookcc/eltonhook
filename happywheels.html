@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happywheels</title>
+    <link rel="stylesheet" href="games.css"
+</head>
+<body>
+    <center> 
+        <h1>happy wheels</h1>
+    
+    <br>
+    <br>
+    <br>
+    <iframe id="myIframe" src="https://lablockedgames.com/funblocked/happy-wheels/index.min.html" width="700" height="550" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" allowfullscreen="true"></iframe>
+    <br>
+    <button id="redirectButton">Go back</button>
+
+    <script>
+        document.getElementById("redirectButton").addEventListener("click", function() {
+            window.location.href = "games.html";  // Replace with the path to your desired HTML file
+        });
+    </script>
+
+            <!-- Button to trigger fullscreen -->
+            <button id="fullscreenButton">Go Fullscreen</button>
+
+            <script>
+                document.getElementById("fullscreenButton").addEventListener("click", function() {
+                    var iframe = document.getElementById("myIframe");
+            
+                    // Check if the iframe can request fullscreen
+                    if (iframe.requestFullscreen) {
+                        iframe.requestFullscreen();
+                    } else if (iframe.mozRequestFullScreen) { // Firefox
+                        iframe.mozRequestFullScreen();
+                    } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                        iframe.webkitRequestFullscreen();
+                    } else if (iframe.msRequestFullscreen) { // IE/Edge
+                        iframe.msRequestFullscreen();
+                    } else {
+                        alert("Your browser doesn't support fullscreen for iframes.");
+                    }
+                });
+            </script>
+            
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,30 @@
+img {
+
+    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+}
+
+body {
+
+    background-color: aquamarine;
+
+}
+
+h1 {
+    
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: crimson;
+    font-size: 350%;
+
+}
+
+
+button {
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5%;
+
+}
+
